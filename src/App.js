@@ -1,23 +1,27 @@
 import logo from './logo.svg';
 import './App.css';
+import  NavScrollExample from './navbar';
+import { MemoryRouter } from 'react-router';
+import { Route, Switch,BrowserRouter as Router} from "react-router-dom";
+import history from './history';
+import Login from'./login';
+import Testfile from './test';
 
 function App() {
+  
   return (
+    
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router >
+      <Switch>
+        <Route path="/" exact component={Login}>
+         {/* <Login/> */}
+        </Route>
+        <Route path="/profile" component={Testfile} >
+         {/* <Testfile/> */}
+        </Route>
+       </Switch>
+       </Router>
     </div>
   );
 }

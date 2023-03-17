@@ -11,3 +11,36 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.form{
+  text-align: center;
+  background-color: lightsalmon;opacity: 100%;
+  align-items: center;
+  margin: 20px;
+  border-radius: 8px ;
+  
+  padding: 50px;
+  
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  line-height: 40px;
+ 
+  
+
+}
+button{
+  width: 60%;
+  height:40px;
+  margin:10px auto;
+  justify-content: center;
+  display: block;
+  color:white;
+  border-radius: 5px;
+  border:mediumblu 3px;
+ 
+ 
+  font-size: 1em;
+  font-weight:bold ;
+  background:steelblue;
+
+  
+}
