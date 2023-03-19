@@ -12,7 +12,8 @@ code {
     monospace;
 }
 .form{
-  text-align: center;
+  text-align:center;
+  
   background-color: lightsalmon;opacity: 100%;
   align-items: center;
   margin: 20px;
@@ -23,10 +24,14 @@ code {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: bold;
   line-height: 40px;
+  
  
   
 
 }
+
+ input[type=Submit]:hover {
+  background-color: #45a049;}
 button{
   width: 60%;
   height:40px;
@@ -41,6 +46,59 @@ button{
   font-size: 1em;
   font-weight:bold ;
   background:steelblue;
+  
 
   
+}
+
+ button:hover {
+  background-color: #45a049;}
+.navbar{
+  overflow: hidden;
+  
+  position: fixed;
+  top: 0;
+  width: 100%;
+  
+  margin: 10px 10px;
+  margin-right: 10px;
+  background-color: chocolate;
+  padding: 5px 5px;
+  
+  border-radius: 10px;
+  
+}
+.form h5{
+  font-family: fantasy;
+}
+
+
+.navbar ul li:hover{
+  background-color: aqua;
+  
+  color: black;
+}
+.navbar ul li{
+  
+  display:inline-block;
+  float:left;
+  font-family:'Courier New', Courier, monospace;
+  border-radius:20px ;
+  
+  
+  letter-spacing: 2px;
+  font-weight: bold;
+  padding :  10px  20px;
+  
+  
+  
+  
+
+ 
+  
+}
+.display{
+  margin-top: 90px;
+  text-align: center;
+  line-height:40px ;
 }

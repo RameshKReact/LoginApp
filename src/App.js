@@ -1,11 +1,12 @@
-import logo from './logo.svg';
 import './App.css';
-import  NavScrollExample from './navbar';
-import { MemoryRouter } from 'react-router';
 import { Route, Switch,BrowserRouter as Router} from "react-router-dom";
-import history from './history';
-import Login from'./login';
-import Testfile from './test';
+import Login from './login';
+import Mainscreen from './mainscreen';
+import Signupfrom from './registrationform';
+  
+
+
+
 
 function App() {
   
@@ -17,9 +18,15 @@ function App() {
         <Route path="/" exact component={Login}>
          {/* <Login/> */}
         </Route>
-        <Route path="/profile" component={Testfile} >
+        <Route path="/profile" component={Mainscreen} >
+        
+          
+        
          {/* <Testfile/> */}
         </Route>
+        <Route path="/registration" component={Signupfrom} >
+        </Route>
+
        </Switch>
        </Router>
     </div>

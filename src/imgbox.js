@@ -1,31 +1,27 @@
-import React,{Component}from "react";
+import React,{Component} from "react";
 import './index.css'
+
+
 
 class Imagebox extends Component{
 
-     
-   render(){
-    
-    
+        render(props){
+                const {name}=this.props;
+         console.log(this.props.name);
 
 
+                return(
+               
+                 <div >
+                        
+                     <label > {name}</label>
+                     
+                      
+                 </div>
+                )
 
-        
-
-        // return(
-
-        //     function loadData(){
-        //         fetch("https://jsonplaceholder.typicode.com/photos")
-        //         .then(response=> res.json())
-        //         .then(data=>console.log(data))
-        //     }
-          
-        //     <button onClick={loadData()}>get data</button> 
-        //     <div className="images">   </div>
-          
-       
-        // )
         }
+
 }
 
 export default Imagebox;

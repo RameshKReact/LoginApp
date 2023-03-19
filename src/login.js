@@ -9,9 +9,14 @@ class Login extends Component{
        
    
         const handleClick=(e)=>{
-            e.preventDefault();
-            this.props.router.push('/profile');
+           
+            this.props.history.push('/profile');
 
+        }
+
+        const signupClick=(e)=>{
+           
+            this.props.history.push('/registration');
         }
 
 
@@ -19,12 +24,17 @@ class Login extends Component{
 
 
           <div className="form">
+            <h2>Welcome to React</h2>
+            <h4>Hey! Good to see you back.</h4>
             <form>
                 
                 UserName:<input type="text" placeholder="use email/card number"/> <br/>
                 Password:<input type="text" placeholder="**********"/> <br/>
                 <br/>
+                
                 <button onClick={handleClick} type="Submit" >Login Now</button>
+                <button onClick={signupClick} type="Submit" >Sign Up</button>
+               
                 
                
 
